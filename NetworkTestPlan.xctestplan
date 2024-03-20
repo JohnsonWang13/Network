@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "3E9DBF18-A749-4F9E-8E8F-AC5025F3241A",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "threadSanitizerEnabled" : false
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "Network",
+          "name" : "Network"
+        }
+      ]
+    },
+    "threadSanitizerEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "NetworkTests",
+        "name" : "NetworkTests"
+      }
+    }
+  ],
+  "version" : 1
+}
